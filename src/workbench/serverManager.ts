@@ -77,7 +77,8 @@ export class ServerManager {
         });
         const subgraph = this.mocksWorkbenchFile.schemas[serviceName];
         const mocks = this.getMocks(subgraph);
-        await this.startServer(serviceName, subgraph.sdl, mocks);
+        if(subgraph.shouldMock)
+          await this.startServer(serviceName, subgraph.sdl, mocks);
       }
 
       if (this.generateMocksSupergraphSdl()) {
