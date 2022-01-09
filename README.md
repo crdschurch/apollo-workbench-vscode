@@ -1,3 +1,7 @@
+# CRDS FOLKS
+
+This is versions 2.2.1 but with a bug to allow local urls to work. Apollo has a fix planned for Q1 2022, but wanted to get started with the new workflow now. I built the extension with the fix and am hosting it on S3 for internal use at crds until the official Apollo fix. 
+
 # Apollo Workbench for VS Code
 
 Workbench is a tool built by the Apollo Solutions Team to help design schemas using Apollo Federation and work with the composed results. This need was driven by working countless number of migrations from an existing GraphQL infrastructure (monolith or schema stitched) to an [Apollo Federated architecture](https://www.apollographql.com/docs/federation/).
